@@ -29,7 +29,7 @@ jobs:
           args: /bin/sh -c "mkdir python_lib && pip install -r requirements.txt -t /python_lib/ && ls"
       
       - name: Zip Python libraries
-        run: zip -r9 python_lib.zip ./python
+        run: zip -r9 python_lib.zip ./python_lib
       
       - name: List Files
         run: ls
