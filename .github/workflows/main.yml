@@ -26,4 +26,4 @@ jobs:
       - name: Run lambda container
         uses: docker://lambci/lambda:build-python3.8
         with:
-          args: /bin/sh -c "sudo -H pip install -r requirements.txt && ls"
+          args: /bin/sh -c "pip install -r requirements.txt && ls && pwd"
